@@ -1,2 +1,11 @@
 python3 -m venv .venv
 source .venv/bin/activate
+
+ssh -T git@github.com
+git remote -v
+
+
+git remote add upstream git@github.com:KonuTech/llm-zoomcamp-module-05.git
+git remote set-url origin git@github.com:KonuTech/llm-zoomcamp-module-05.git
+git fetch upstream
+git checkout main
